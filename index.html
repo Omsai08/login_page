@@ -31,7 +31,7 @@
 												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="#" class="btn mt-4">submit</a>
+											       <button type="submit" class="btn mt-4" onclick="login()">Login</button>
                             				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
 				      					</div>
 			      					</div>
@@ -52,7 +52,7 @@
 												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="#" class="btn mt-4">submit</a>
+											<button type="submit" class="btn mt-4" onclick="signup()">signup</button>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -64,6 +64,27 @@
 	    </div>
 	</div>
 <!-- partial -->
-  
+  <script>
+		function login() {
+			var username = document.getElementById("logemail").value;
+			var password = document.getElementById("logpass").value;
+			if (username == "admin" && password == "admin") {
+				alert("Login successful!");
+			} else {
+				alert("Invalid username or password.");
+			}
+		}
+
+    function signup(){
+      var yourname = document.getElementById("logname").value
+      var username = document.getElementById("logemail").value;
+			var password = document.getElementById("logpass").value;
+			if (username == "admin" && password == "admin") {
+				alert("Login successful!");
+			} else {
+				alert("Invalid username or password.");
+			}
+    }
+	</script>
 </body>
 </html>
